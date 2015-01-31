@@ -1,0 +1,65 @@
+
+<!-- progress bar -->
+<div class="text-center">
+
+<div class="row">
+  <div class="col-xs-12">
+		
+    <h3><span class="glyphicon glyphicon-list-alt"></span>&nbsp;&nbsp;To-Do List</h3>
+
+		<div class="progress">
+  		<div class="progress-bar progress-bar-warning"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: {{ percentage }}%">
+    		<span class="sr-only"></span>
+  		</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- inputs -->
+<div class="row">
+	<div class="col-xs-12">
+		<div class="input-group">
+		   <input type="text" ng-model="item" ng-keypress="enterPress($event)" placeholder="Add an item to the list" class="form-control">
+		     <span class="input-group-btn">
+		       <button ng-click="submitItem()" class="btn btn-default" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+		      </span>
+		  </div>
+	</div>
+</div><br />
+</div>
+
+
+<!-- list of items -->
+<div class="row">
+	<div class="col-xs-12">	
+			
+	<ul id="todo-list">
+		<li ng-repeat="item in items | orderBy:'completed'">
+			
+			<blockquote class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+
+					<div><span ng-class="itemCompleted( item.completed )" type="checkbox" value="{{item.completed}}" ng-model="item.completed" ng-click="changeValue(item)"></span><h4 class="inline">&nbsp;&nbsp;{{ item.title }}&nbsp;</h4>
+					</div>	
+					<small class="text-muted" class="inline">
+						{{ item.initials }} on {{ item.date }}
+						<span ng-class="inline" ng-click="deleteItem(item)" ng-show="postOwner( item.initials )">&bull;&nbsp;delete</span>
+					</small>
+					
+					
+				</blockquote>
+				
+				
+				
+			</div>
+			
+				
+		</li>
+	</ul>
+
+		
+	</div>
+</div>
+
+
+

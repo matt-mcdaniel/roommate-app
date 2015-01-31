@@ -1,0 +1,439 @@
+/*
+@brand-primary: #428bca;
+@brand-success: #5cb85c;
+@brand-info:    #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger:  #d9534f;
+*/
+
+
+body {
+  margin: 0;
+  padding-top: 60px;
+  background-color: #f7f7f7;
+  font-family: 'Open Sans';
+  cursor: pointer;
+}
+
+.navbar {
+	background-color: #3498DB;
+}
+
+.navbar {
+	text-align: center;
+}
+
+.navigation > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 60px;
+}
+
+
+.navigation > div > a {
+	padding-top: 20px;
+	display: inline;
+	font-size: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+
+.navigation > div > a:hover {
+	display: inline;
+	padding: 20px;
+	font-size: 20px;
+	background-color: #2980B9;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+  color: white;
+  font-size: 20px;
+}
+/* end copy from css */
+
+#nav-items {
+	color: white;
+}
+	 
+#nav-hover:hover {
+	background-color: #2980B9;
+}
+
+#nav-login {
+	margin-top: 5px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.badge {
+	background-color: #D6D6D6;
+	padding: 9px 2px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	margin: 0px;
+	height: 30px;
+	width: 30px;
+	font-size: 13px;
+		margin-bottom: 4px;
+}
+
+.bowl-badge {
+	margin-right: -15px;
+	margin-top:-30px;
+	text-align: right;
+}
+
+#dex-top-margin {
+	margin-top: 25px;
+}
+
+.message-box {
+	display: inline-block;
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.checkbox-completed {
+	color: #5cb85c;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.vertical-centered {
+  margin-bottom: auto;
+	margin-top: auto;
+}
+
+.right {
+	text-align: right;
+	display: inline-block;
+}
+
+[ng/:cloak], [ng-cloak], .ng-cloak {
+	display: none !important;
+}
+
+#nav-show.ng-cloak {
+	:ng_show: "$rootScope.signedIn";
+}
+
+#color-bar {
+	margin-top: 7px;
+}
+
+#user-hr {
+	margin-top:-20px;
+	margin-bottom:20px;
+}
+
+.current-initials {
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	font-size: 30px;
+	padding: 10px;
+}
+
+#login-register {
+
+}
+
+#login {
+	display: inline-block;
+}
+
+#register {
+	display: inline-block;
+}
+
+#icon {
+	margin-top: 2px;
+	margin-left: 10px;
+	height: 45px;
+	width: 45px;
+}
+
+#title {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 2px;
+	width: 80%;
+	height: 80%;
+}
+
+.house {
+	margin-top: 10px;
+	width: 80%;
+	height: 80%;
+}
+
+
+#inline {
+	display: inline-block;
+}
+
+.profile-header {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#initials {
+	text-align: center;
+	padding-left: 40%;
+	padding-right: 40%;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+#user-border {
+	border-left: 1px solid #D6D6D6;
+}
+
+#user-border:hover {
+	background-color: #2980B9;
+}
+
+
+#todo-border {
+	border-left: 1px solid #D6D6D6;
+}
+
+#todo-nav-border {
+	border-left: 1px solid #D6D6D6;
+	border-right: 1px solid #D6D6D6;
+}
+
+#todo-nav-border:hover {
+	background-color: #2980B9;
+}
+
+#dex-icon {
+	width: 23px;
+	height: auto;
+	color: white;
+	margin-top: -8px;
+}
+
+#todo-list {
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+}
+
+.chat-footer {
+	position: fixed;
+	height: 35px;
+	width: 100%;
+}
+
+.footer-flex {
+	display: flex;
+	text-align: center;
+	font-size: 30px;
+}
+
+#chatList {
+	list-style-type: none;
+}
+
+#padding-bottom {
+	margin-bottom: 100px;
+}
+
+
+.red-chat {
+	border-radius: 4px;
+	border: 1px solid #d9534f;
+	background-color: rgba(217, 83, 79, .25);
+}
+
+.yellow-chat {
+	border-radius: 4px;
+	border: 1px solid #f0ad4e;
+	background-color: rgba(240, 173, 78, .25);
+}
+
+.green-chat {
+	border-radius: 4px;
+	border: 1px solid #5cb85c;
+	background-color: rgba(92, 184, 92, .25);
+}
+
+.blue-chat {
+	border-radius: 4px;
+	border: 1px solid #5bc0de;
+	background-color: rgba(91, 192, 222, .25);
+}
+
+#chat-message {
+	font-size: 18px;
+	padding: 6px;
+	opacity: 1;
+}
+
+
+#show-border {
+	border: 1px dotted black;
+}
+
+.border-row {
+	padding-top: 7px;
+  border-top: 1px solid #eee;
+}
+
+#makeup-row-margin {
+	margin-top: -8px;
+}
+
+#dexter-header-row {
+	margin-top: -4px;
+	padding-bottom: 12px;
+	background-color: rgba(13, 149, 52, 1);
+}
+
+.dexter-header {
+	display: inline;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+}
+
+#dex-today {
+	background-color: white;
+	border-bottom: 1px solid #0d9534;
+}
+
+.dex-today-font {
+	padding-top: 10px;
+	color: #2C3E50;
+	font-size: 20px;
+}
+
+.lector {
+	display: inline;
+}
+
+#lector {
+	margin-top: -15px;
+	width: 45px;
+	height: auto;
+	padding: 10px;
+}
+
+.prev-bowl-wrapper {
+	display: inline;
+	width: 140px;
+	height: auto;
+	padding: 20px;
+}
+
+.prevbowl {
+	margin-left: -15px;
+	max-width: 120px;
+	height: auto;
+}
+
+.dexbowl {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+	height: 50%;
+	width: 50%;
+	min-height: 120px;
+	min-width: 120px;
+}
+
+.alert {
+  padding: 4px;
+  margin-bottom: 4px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert h4 {
+  margin-top: 1;
+  color: inherit;
+}
+.alert .alert-link {
+  font-weight: bold;
+}
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+.alert > p + p {
+  margin-top: 5px;
+}
+.alert-dismissable {
+  padding-right: 35px;
+}
+.alert-dismissable .close {
+  position: relative;
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+	text-align: left;
+}
+.alert-success hr {
+  border-top-color: #c9e2b3;
+}
+.alert-success .alert-link {
+  color: #2b542c;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+	text-align: left;
+}
+.alert-info hr {
+  border-top-color: #a6e1ec;
+}
+.alert-info .alert-link {
+  color: #245269;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-warning hr {
+  border-top-color: #f7e1b5;
+}
+.alert-warning .alert-link {
+  color: #66512c;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert-danger hr {
+  border-top-color: #e4b9c0;
+}
+.alert-danger .alert-link {
+  color: #843534;
+}

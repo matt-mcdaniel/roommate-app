@@ -1,0 +1,42 @@
+<!-- message display -->
+<div ng-scroll id="padding-bottom">
+<div ng-repeat-start="msg in messages | filter:search track by $index" id="chat">
+			<div class="row">
+					<div ng-class-even=" 'text-left' " ng-class-odd=" 'text-right' ">
+
+				
+						<div class="col-xs-12 border-row">
+						
+								<div ng-show="isOdd($index)" class="badge">{{msg.initials}}</div>
+
+								<label class="message-box"><div id="chat-message" ng-class="whichColor(msg.color)">&nbsp;<small >{{ msg.message }}&nbsp;</small></div></label>
+							
+								<div ng-hide="isOdd($index)" class="badge">{{msg.initials}}</div>
+
+
+						</div>
+							
+					</div>
+			</div>
+</div>
+<div ng-repeat-end>
+</div>
+
+
+
+<!-- footer -->
+<div class="row">
+	<div class="chat-footer">
+			<div class="col-xs-12">
+				<div class="input-group">
+     			<input type="text" class="form-control" ng-keypress="enterPress($event)" ng-model="msg.message">
+      			 <span class="input-group-btn">
+       			 <button ng-click="submitMsg()" class="btn btn-default" type="button">
+					 Send <span class="glyphicon glyphicon-circle-arrow-right"></span>
+				 </button>
+      			</span>
+ 			</div>
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,53 @@
+<div class="navbar navbar-default navbar-fixed-top" role="navigation" ng-show='userStatus'>
+	<div class="container-fluid">
+		
+			<div class="row">
+				<div class="col-xs-2 col-lg-1" ng-hide="signedIn">
+					<ul class="nav navbar-nav">
+						<li ng-href="#/login"><img id="icon" src="images/harrison-01.png" /></li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-4 centered" id="nav-hover" ng-hide="signedIn">
+						<ul class="nav navbar-nav">
+							<li id="nav-login"><a ng-href="#/login"><span id="nav-items" class="glyphicon glyphicon-log-in">&nbsp;Login</span></a></li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-4 centered" id="nav-hover" ng-hide="signedIn">
+						<ul class="nav navbar-nav">
+							<li id="nav-login"><a ng-href="#/register"><span class="glyphicon glyphicon-edit" id="nav-items">&nbsp;Register</span></a></li>
+						</ul>
+					</div>
+			
+				
+				<div class="col-xs-2" id="nav-hover" ng-show="signedIn">
+					<ul class="nav navbar-nav">
+						<li ng-class="{{ chatCat.active }}"><a ng-href="{{ chatCat.url }}"><span  id="nav-items" class="{{ chatCat.icon }}"></span></a></li>
+					</ul>
+				</div>
+				
+				<div class="col-xs-4" id="todo-nav-border" ng-show="signedIn" >
+					<ul class="nav navbar-nav">
+						<li ng-class="{{ todoCat.active }}"><a ng-href="{{ todoCat.url }}"><span id="nav-items"class="{{ todoCat.icon }}"></span></a></li>
+					</ul>
+				</div>
+				
+				<div class="col-xs-4" id="nav-hover" ng-show="signedIn">
+					<ul class="nav navbar-nav">
+						<li ng-class="{{ dexterCat.active }}"><a ng-href="{{ dexterCat.url}}"><img src="{{ dexterCat.icon }}" id="dex-icon" /></a></li>
+					</ul>
+				</div>
+				
+				<div class="col-xs-2" id="user-border" ng-show="signedIn">
+					<ul class="nav navbar-nav">
+						<li ng-class="{{ userProfile.active }}"><a ng-href="{{ userProfile.url }}"><span id="nav-items" class="{{ userProfile.icon }}"></span></a></li>
+					</ul>
+				</div>
+				
+			</div>
+</div>
+
+	</div>
+
+</div>

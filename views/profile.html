@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+			
+			<div class="profile-header">
+			<span id="initials" ng-class="chooseColor(currentUser.color)" ng-bind="currentUser.initials"></span></div>
+
+			<div class="panel panel-default">
+			
+				<div class="panel-body">
+					<div ng-click="changeColor('Green')" class="alert alert-success"><h4><p id="color-bar" class="centered">Green</select></h4></div>
+						<div ng-click="changeColor('Yellow')" class="alert alert-warning"><h4><p id="color-bar" class="centered">Yellow</p></h4></div>
+						<div ng-click="changeColor('Blue')" class="alert alert-info"><h4><p id="color-bar" class="centered">Blue</p></h4></div>
+						<div ng-click="changeColor('Red')" class="alert alert-danger"><h4><p id="color-bar" class="centered">Red</p></h4></div>
+					</div>
+				</div>
+				
+				<div><a ng-click="logout()" ng-href="#">Logout</a></div>
+			
+			
+			
+	</div>
+</div>
